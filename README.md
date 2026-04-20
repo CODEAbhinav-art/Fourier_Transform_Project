@@ -23,10 +23,9 @@ $$X(f) = \int_{-\infty}^{\infty} x(t) e^{-j 2 \pi f t} dt$$
 
 ### 2. The Filter Design
 We identify the noise spike at $f_{noise} = 5000$ Hz in the magnitude spectrum and apply a frequency mask:
-$$H(f) = 
-\begin{cases} 
-0 & \text{if } f \in [f_{noise} \pm \Delta] \\
-1 & \text{otherwise}
+$$H(f) = \begin{cases} 
+0 & \text{if } f \in [f_{noise} \pm \Delta] \\ 
+1 & \text{otherwise} 
 \end{cases}$$
 
 ### 3. Reconstruction
